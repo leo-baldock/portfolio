@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i,400,700|Source+Code+Pro');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', monospace;
+}
+
+body {
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+p {
+  text-align: left;
+  font-size: 1.1em;
+}
+
+/******************************ELEMENT CLASSES*********************************/
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-item:hover {
+  transition: all 0.1s ease-in-out;
+  background-color: #8E2800;
+}
+
+.nav-item p {
+  text-align: center;
+}
+
+.subtitle {
+  margin: 20px 0px;
+  width: 40%;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-light {
+  background-color: #fff;
+  color: #000;
+}
+
+.section-dark {
+  background-color: #222;
+  color: white;
+}
+
+.section-title {
+  font-size: 3em;
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 5%;
+  margin-top: 0;
+}
+
+.section-body {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column; 
+}
+
+.skill-pane {
+  background-color: #fff; 
+  color: #000;
+  width: 40%;
+  box-shadow: #111 0px 0px 20px;
+}
+
+.skill-pane-title {
+  font-size: 2em;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  font-weight: 700;
+  box-shadow: #111 0px 1.5px 4px; 
+  background-color: #8E2800;
+  color: #fff;
+}
+
+.skill-pane-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px 20px 20px 20px;
+}
+
+.skill-item {
+  width:100%;
+}
+
+.skill-item-name {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: flex-start;
+  font-size: 1.1em; 
+}
+
+.skill-item-value {
+  height: 1em;
+  width: 0%;
+  background-color: #468966;
+  box-shadow: #111 0px 1.5px 4px;
+}
+
+.show-skill-value {
+  animation: graph-bar 1.5s ease-in-out;
+}
+
+.project-item {
+  position: relative;
+  border-radius: 4px;
+  box-shadow: #111 0px 1px 5px;
+  text-align: center;
+  background-color: black;
+}
+
+.project-img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  z-index:0;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+.project-desc {
+  opacity: 0;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+  margin: 0px 10px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.project-desc span {
+  font-size: 1.5em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-item:hover .project-img {
+  opacity: 0.3;
+  transition: all 0.3s linear;
+}
+
+.project-item:hover .project-desc {
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.contact-link {
+  margin: 20px 5vw;
+}
+
+.contact-link p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: #666;
+}
+
+.contact-link i{
+  font-size: 5em;
+}
+
+
+/********************************ELEMENT IDS***********************************/
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  background-color: #222;
+  box-shadow: #111 0px 1.5px 5px;
+  z-index: 1000;
+}
+
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  font-size: 5em;
+  margin: 0;
+}
+
+#btn_enter {
+  font-size: 2em;
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 10px;
+}
+
+
+#profile {
+  margin-left: 20px; 
+  width: calc(9em + 15%);
+  border-radius: 100%;
+  object-fit: contain; 
+  box-shadow: #222 0px 0px 10px;
+}
+
+#project_grid {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  grid-auto-rows: 250px;
+  justify-content: stretch;
+  align-items: stretch;
+  color: black;
+}
+
+#contact_links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: #111 0px 0px 20px;
+  border-radius: 4px;
+}
+
+#contact_email:hover {
+  color: #DD4B39;
+}
+
+#contact_linkedin:hover {
+  color: #0077B5;
+}
+
+#contact_github:hover {
+  color: #000;
+}
+
+/*****************************ANIMATION KEYFRAMES******************************/
+@keyframes graph-bar {
+  0% {width:0%};
+}

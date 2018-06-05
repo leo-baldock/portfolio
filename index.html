@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Leo Baldock | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="hover-min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <!--NAVBAR-->
+  <div id="navbar">
+      <div id="nav-items">
+        <a class="nav-item" href="#section_about"><p>About Me</p></a>
+        <a class="nav-item" href="#section_skills"><p>Skills</p></a>
+        <a class="nav-item" href="#section_projects"><p>Projects</p></a>
+        <a class="nav-item" href="#section_contact"><p>Contact</p></a>
+      </div>
+    </div>
+  <!--HEADER SECTION-->
+  <div id="section_header" class="section section-dark">
+    <h1 id="title">
+      Hi, I'm Leo,
+    </h1>
+    <span class="subtitle">
+      an undergraduate Software Engineer with a passion for writing simple, 
+      beautiful code.
+      <br/><br/>
+    </span>
+    <a id="btn_enter" class="hvr-fade" href="#section_about">
+      Learn More
+    </a>
+  </div>
+  <!--ABOUT SECTION-->
+  <div id="section_about" class="section section-light">
+    <h1 class="section-title">{ ABOUT_ME }</h1>
+    <div class="section-body flex-row">
+      <p>
+        I'm a passionate student interested in everything from web apps to
+        micro-controllers. Since I started writing code 5 years ago, I've built websites, video
+        games, databases, robots, and more. I've worked alone, and in teams, and
+        have led several projects to success.
+        <br/>
+        <br/>
+        When I'm not working, I spend time learning about new 
+        technologies, or reading up on other subjects that interest me, such as
+        history, science, and finance. If I can get away for the weekend, I love
+        going hiking!
+        <br/>
+        <br/>
+        I'm always looking for new experiences and opportunities to learn!
+      </p>
+      <img id="profile" src="res/profile.png" alt="A dashing photo of me." />
+    </div>
+  </div>
+  <!--SKILLS SECTION-->
+  <div id="section_skills" class="section section-dark">
+      <h1 class="section-title">{ MY_SKILLS }</h1>
+      <div class="section-body flex-row">
+        <div class="skill-pane">
+          <div class="skill-pane-title">Technical</div>
+          <div class="skill-pane-content">
+            <div class="skill-item">
+              <div class="skill-item-name">Java</div>
+              <div class="skill-item-value" style="width:90%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-name">HTML/CSS/JS</div>
+              <div class="skill-item-value" style="width:70%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-name">Git</div>
+              <div class="skill-item-value" style="width:70%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-name">Python</div>
+              <div class="skill-item-value" style="width:60%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-name">React.js</div>
+              <div class="skill-item-value" style="width:50%"></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-name">C</div>
+              <div class="skill-item-value" style="width:50%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-pane">
+            <div class="skill-pane-title">Personal</div>
+            <div class="skill-pane-content">
+              <div class="skill-item">
+                <div class="skill-item-name">Proactivity</div>
+                <div class="skill-item-value" style="width:90%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-name">Leadership</div>
+                <div class="skill-item-value" style="width:80%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-name">Teamwork</div>
+                <div class="skill-item-value" style="width:70%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-name">Teaching</div>
+                <div class="skill-item-value" style="width:70%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-name">Music</div>
+                <div class="skill-item-value" style="width:50%"></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-name">Volunteer Work</div>
+                <div class="skill-item-value" style="width:50%"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!--PROJECTS SECTION-->
+  <div id="section_projects" class="section section-light">
+    <h1 class="section-title">{ PROJECTS }</h1>
+    <div id="project_grid" class="section-body">
+      <div class="project-item">
+        <img class="project-img" src="res/this_website.png" alt="This website." />
+        <p class="project-desc">
+          <span>This Website</span>
+          A showcase of my professional abilities, projects and experience.
+        </p>
+      </div>
+      <div class="project-item">
+        <img class="project-img" src="/res/assessment.png" alt="App GUI." />
+        <p class="project-desc">
+          <span>Student Assessment App</span>
+          An Android app for electronic marking of criteria sheets in primary
+          and secondary schools.
+        </p>
+      </div>
+      <div class="project-item">
+        <img class="project-img" src="/res/armms.png" alt="Robot vehicle." />
+        <p class="project-desc">
+          <span>ARMMS</span>
+          Autonomous Radioactive Material Management System: a concept product
+          designed to facilitate the collection of radiactive waste. Our concept
+          model used magnetic feilds to simulate nuclear radiation.
+        </p>
+      </div>
+      <div class="project-item">
+        <img class="project-img" src="/res/frogger_all.png" alt="Frogger game" />
+        <p class="project-desc">
+          <span>Frogger</span>
+          A clone of the classic game Frogger for the AVR microcontroller
+          displayed on an LED matrix.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--CONTACT SECTION-->
+  <div id="section_contact" class="section section-dark">
+    <h1 class="section-title">{ CONTACT_ME }</h1>
+    <div class="section-body flex-col">
+      <span class="subtitle">
+        Want to talk?<br/>Feel free to get in touch!
+      </span>
+      <div id="contact_links">
+        <div class="contact-link">
+          <a id="contact_email" href="mailto:leojdbaldock@gmail.com">
+            <i class="far fa-envelope"></i>
+            <p>Email</p>
+          </a>
+        </div>
+        <div class="contact-link">
+          <a id="contact_linkedin" href="https://www.linkedin.com/in/leo-baldock/"
+            target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="contact-link">
+          <a id="contact_github" href="https://github.com/leo-baldock" target="_blank">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
